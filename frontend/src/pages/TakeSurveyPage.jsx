@@ -16,6 +16,7 @@ const TakeSurveyPage = () => {
 
   useEffect(() => {
     checkCompletion();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const checkCompletion = async () => {

@@ -6,7 +6,6 @@ import './MyResultsPage.css';
 const MyResultsPage = () => {
   const [responses, setResponses] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedResponse, setSelectedResponse] = useState(null);
   const [answers, setAnswers] = useState([]);
   const [showModal, setShowModal] = useState(false);
 

@@ -16,6 +16,7 @@ const SurveyStatsPage = () => {
 
   useEffect(() => {
     fetchStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchStats = async () => {
@@ -36,7 +37,6 @@ const SurveyStatsPage = () => {
   const getPieData = (question) => {
     if (!question.options || question.options.length === 0) return null;
 
-    const total = question.options.reduce((sum, opt) => sum + (opt.count || 0), 0);
 
     return {
       labels: question.options.map(opt => `${opt.option_text} (${opt.count || 0})`),

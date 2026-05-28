@@ -19,6 +19,7 @@ const CreateSurveyPage = () => {
     if (isEditing) {
       fetchSurvey();
     }
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchSurvey = async () => {
