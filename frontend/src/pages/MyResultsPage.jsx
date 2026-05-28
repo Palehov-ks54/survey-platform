@@ -34,7 +34,6 @@ const MyResultsPage = () => {
         headers: { Authorization: `Bearer ${token}` }
       });
       setAnswers(response.data);
-      setAnswers([]);
       setShowModal(true);
     } catch (error) {
       console.error('Ошибка загрузки ответов:', error);
