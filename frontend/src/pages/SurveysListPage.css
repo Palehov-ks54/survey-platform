@@ -1,0 +1,144 @@
+.surveys-list-page h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.surveys-search {
+  margin-bottom: 30px;
+}
+
+.surveys-search input {
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.surveys-search input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.surveys-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.survey-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.survey-card:hover {
+  border-color: #3498db;
+  box-shadow: 0 2px 10px rgba(52, 152, 219, 0.1);
+  transform: translateY(-2px);
+}
+
+.survey-card.official {
+  border-color: #27ae60;
+  background: #f8fdf9;
+}
+
+.survey-card.official:hover {
+  border-color: #2ecc71;
+  box-shadow: 0 2px 10px rgba(46, 204, 113, 0.15);
+}
+
+.official-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #27ae60;
+  color: white;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.survey-card-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.survey-card-body h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  padding-right: 100px;
+}
+
+.survey-desc {
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.survey-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.survey-creator {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.official .survey-creator {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.survey-date {
+  color: #95a5a6;
+  font-size: 13px;
+}
+
+.survey-card-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #eee;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #7f8c8d;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .surveys-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .surveys-search input {
+    max-width: 100%;
+  }
+  
+  .survey-card-body h3 {
+    padding-right: 0;
+  }
+  
+  .official-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}

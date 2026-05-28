@@ -1,0 +1,93 @@
+.my-surveys {
+  padding: 20px 0;
+}
+
+.surveys-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.surveys-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.surveys-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.survey-card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.survey-card:hover {
+  border-color: #3498db;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+}
+
+.survey-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.survey-card-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.active {
+  background: #27ae60;
+  color: white;
+}
+
+.status-badge.inactive {
+  background: #95a5a6;
+  color: white;
+}
+
+.survey-desc {
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.survey-meta {
+  color: #95a5a6;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.survey-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  background: white;
+  border: 1px solid #e0e0e0;
+}
