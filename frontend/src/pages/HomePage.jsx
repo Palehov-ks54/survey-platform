@@ -49,7 +49,7 @@ const HomePage = ({ user }) => {
                   Перейти в админ-панель
                 </Link>
               ) : (
-                <Link to="/survey" className="btn btn-primary btn-lg">
+                <Link to="/surveys" className="btn btn-primary btn-lg">
                   Перейти к опросам
                 </Link>
               )}

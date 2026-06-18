@@ -5,7 +5,6 @@ const initDatabase = async () => {
     try {
         console.log('Начинаем создание таблиц...');
 
-        // Создание таблицы users
         await pool.query(`
             CREATE TABLE IF NOT EXISTS users (
                 id SERIAL PRIMARY KEY,
@@ -18,7 +17,6 @@ const initDatabase = async () => {
         `);
         console.log('Таблица users создана');
 
-        // Создание таблицы surveys
         await pool.query(`
             CREATE TABLE IF NOT EXISTS surveys (
                 id SERIAL PRIMARY KEY,
